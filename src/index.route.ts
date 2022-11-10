@@ -4,7 +4,7 @@ const router = express.Router()
 const authRoutes = require('./routes/auth');
 const furnitureRoutes = require('./routes/furniture');
 
-router.get('/health-check', (req, res) =>
+router.get('/health-check', (req: any, res: any) =>
   res.send('OK')
 )
 
